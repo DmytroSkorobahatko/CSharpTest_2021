@@ -23,8 +23,8 @@ namespace CSharpTest
             
             if (startDate > weekEnds[weekend_index].StartDate)
             {
-                int weekEndsDaysCount = weekEnds[weekend_index].StartDate.Subtract(startDate).Days;
-                lastWorkDate = lastWorkDate.AddDays(weekEndsDaysCount);
+                int weekendsCount = weekEnds[weekend_index].StartDate.Subtract(startDate).Days;
+                lastWorkDate = lastWorkDate.AddDays(weekendsCount);
             }
 
             while (weekend_index < weekEnds.Length && weekEnds[weekend_index].StartDate <= lastWorkDate)
