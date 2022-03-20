@@ -106,14 +106,14 @@ namespace CSharpTest
         }
 
         [TestMethod]
-        public void MyTestWeekendOnStart()
+        public void MyTestWeekendAroundStart()
         {
             DateTime startDate = new DateTime(2021, 4, 21);
             int count = 5;
             WeekEnd[] weekends = new WeekEnd[3]
             {
                 new WeekEnd(new DateTime(2021, 4, 10), new DateTime(2021, 4, 15)),
-                new WeekEnd(new DateTime(2021, 4, 20), new DateTime(2021, 4, 22)),
+                new WeekEnd(new DateTime(2021, 4, 19), new DateTime(2021, 4, 22)),
                 new WeekEnd(new DateTime(2021, 4, 25), new DateTime(2021, 4, 25))
             };
 
